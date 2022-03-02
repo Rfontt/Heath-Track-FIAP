@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Track - Login</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/loginAndcreateAccount.css">
+</head>
+<body>
+    <div id="container">
+        <div class="header">
+            <img src="./assets/logo.png" alt="Cabeça de um ser humano com um coração representando o cerébro" class="logo">
+            <h1 class="title">Health Track</h1>
+        </div>
+
+        <div class="form-login">
+            <form action="./pages/dashboard.html">
+                <h2>Faça login</h2>
+                <span class="subtitle">Faça login para começar!</span>
+                
+                <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Email">
+                <input type="password" class="form-control" id="password" placeholder="Password">
+                <button>Entrar</button>
+
+                <div class="footer">
+                    <span>Não tem uma conta?</span>
+                    <a href="./pages/createAccount.html">Criar conta</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

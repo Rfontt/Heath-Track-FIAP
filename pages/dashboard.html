@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="../styles/dashboard.css">
+    <link rel="stylesheet" href="../styles/global.css">
+    <link rel="stylesheet" href="../styles/alimentation.css">
+    <link rel="stylesheet" href="../styles/goals.css">
+
+    <title>Health Track - Dashboard</title>
+</head>
+<body>
+  <header>
+    <div class="container" id="nav-container">
+      <nav class="navbar navbar-expand-lg fixed-top">
+        <a href="#" class="navbar-brand">
+          <img id="logo" 
+            src="../assets/logo.png" 
+            alt="Cabeça de um ser humano com um coração representando o cerébro">
+          Health Track
+        </a>
+        <button class="navbar-toggler" type="button"
+          data-toggle="collapse" data-target="#navbar-links"
+          arial-controls="navbar-links" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" 
+          id="navbar-links">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link" href="#presentation-container" id="presentation">Apresentação</a>
+            <a class="nav-item nav-link" href="#alimentation-container" id="alimentation">Alimentação</a>
+            <a class="nav-item nav-link" href="#goals-container" id="goals">Metas</a>
+            <a class="nav-item nav-link" href="#" id="exercises">Exercícios</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container-fluid">
+      <div id="mainSlider" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#mainSlider" 
+            data-slide-to="0" class="active"></li>
+          <li data-target="#mainSlider" 
+            data-slide-to="1"></li>
+        </ol>
+
+        <div class="carousel-inner" id="presentation-container">
+          <div class="carousel-item active" id="slideOne">            
+            <div class="carousel-caption d-md-block">
+              <img class="img-fluid" src="../assets/attendance.png" alt="Two persons with computers and smartphone">
+              <h2>Deseja agendar um atendimento?</h2>
+              <p>A Health Track trás para você uma melhoria na sua saúde sem sair de casa.</p>
+              <a href="" class="main-btn">Agendar</a>
+            </div>
+          </div>
+
+          <div class="carousel-item">            
+            <div class="carousel-caption d-md-block" id="slideTwo">
+              <img class="img-fluid" src="../assets/mobileApp.png" alt="Mobile APP">
+
+              <h2 class="download-app">Baixe nosso APP</h2>
+              <p>Também estamos disponíveis para ANDROID e IOS. Baixe nosso APP e aproveite!</p>
+              <a href="" class="main-btn">Baixar</a>
+            </div>
+          </div>
+        </div>
+
+        <a href="#mainSlider" class="carousel-control-prev"
+          role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon"
+           aria-hidden="true"></span>
+           <span class="sr-only">Previous</span>
+        </a>
+
+        <a href="#mainSlider" class="carousel-control-next"
+          role="button" data-slide="next">
+          <span class="carousel-control-next-icon"
+           aria-hidden="true"></span>
+           <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+      <div id="alimentation-container">
+        <div class="container">
+          <div class="title-alimentation">
+            <h3>Alimentação</h3>
+            <span>Dicas para hoje:</span>
+          </div>
+
+          <div class="alimentations-grid">
+            <div class="breakfast">
+              <h2>Café da manhã</h2>
+              <img class="img-fluid" src="../assets/breakfast.jpeg" alt="Bread and milk">
+              <a href="">Ver dicas</a>
+            </div>
+
+            <div class="lunch">
+              <h2>Almoço</h2>
+              <img class="img-fluid" src="../assets/lunch.jpeg" alt="Lunch">
+              <a href="">Ver dicas</a>
+            </div>
+
+            <div class="dinner">
+              <h2>Jantar</h2>
+              <img class="img-fluid" src="../assets/dinner.jpeg" alt="Dinner">
+              <a href="">Ver dicas</a>
+            </div>
+
+            <div class="snacks">
+              <h2>Lanches</h2>
+              <img class="img-fluid" src="../assets/snacks.jpeg" alt="Snacks">
+              <a href="">Ver dicas</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="goals-container">
+        <div class="goals-title">
+          <h3>Metas</h2>
+          <span>Aqui você consulta suas metas</span>
+        </div>
+
+        <div class="goals-content">
+          <div>
+            <span>Peso - Perder 5KG em 1 mês</span>
+            <div class="reach" id="reach-red">-2kg no mês atual</div>
+          </div>
+
+          <div>
+            <span>Hidratação - Beber 1,5L de água por dia</span>
+            <div class="reach" id="reach-green">+1,2L por dia até o momento</div>
+          </div>
+
+          <div>
+            <span>Treinar barriga - Treinar duas vezes ao dia</span>
+            <div class="reach" id="reach-green-one-hundred">2 treinos a cada dia em 2 semanas</div>
+          </div>
+
+          <div>
+            <span>Ir ao médico - Consultas mensais</span>
+            <div class="reach" id="reach-red">-1 consulta no mês de março</div>
+          </div>
+        </div>
+
+        <div class="create-goals">
+          <a href="./create-goals.html">Criar nova meta</a>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

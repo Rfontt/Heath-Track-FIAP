@@ -1,0 +1,102 @@
+#goals-container {
+    background-color: #008080;
+}
+
+.goals-title {
+    display: grid;
+    place-items: center;
+}
+
+.goals-title h3 {
+    color: white;
+    font-weight: bold;
+    margin: 1rem;
+}
+
+.goals-title span {
+    color: white;
+    font-weight: 400;
+}
+
+.goals-content {
+    display: grid;
+}
+
+.goals-content div {
+    display: block;
+    margin: 0.6rem;
+}
+
+.goals-content div .reach {
+    height: 2rem;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #DCDCDC;
+    font-weight: bold;
+}
+
+.goals-content div #reach-red {
+    width: 20rem;
+    background-color: red;
+}
+
+.goals-content div #reach-green {
+    width: 30rem;
+    background-color: #00CC99;
+}
+
+.goals-content div #reach-green-one-hundred {
+    width: 50rem;
+    background-color: #00CC99;
+}
+
+.goals-content div span {
+    margin-left: 0.5rem;
+    color: white;
+    font-weight: bold;
+}
+
+.create-goals {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.create-goals a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    margin: 1rem;
+    background-color: #339999;
+    width: 12rem;
+    height: 3rem;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 900px) {
+    .goals-content div #reach-red {
+        width: 13rem;
+    }
+
+    .goals-content div #reach-green {
+        width: 14rem;
+    }
+    
+    .goals-content div #reach-green-one-hundred {
+        width: 16rem;
+    }
+
+    .goals-content div .reach {
+        font-size: 12px;
+    }
+
+    .goals-content div span {
+        font-size: 15px;
+    }
+}
