@@ -1,5 +1,5 @@
 #goals-container {
-    background-color: #008080;
+    background-color: #339999;
 }
 
 .goals-title {
@@ -44,12 +44,12 @@
 
 .goals-content div #reach-green {
     width: 30rem;
-    background-color: #00CC99;
+    background-color: #008080;
 }
 
 .goals-content div #reach-green-one-hundred {
     width: 50rem;
-    background-color: #00CC99;
+    background-color: #008080;
 }
 
 .goals-content div span {
@@ -65,12 +65,11 @@
 }
 
 .create-goals a {
-    text-decoration: none;
     color: white;
     font-weight: bold;
     text-align: center;
     margin: 1rem;
-    background-color: #339999;
+    background-color: #008080;
     width: 12rem;
     height: 3rem;
     border-radius: 4px;

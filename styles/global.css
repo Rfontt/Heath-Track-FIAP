@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
 * {
     margin: 0px;
     padding: 0px;
@@ -9,4 +11,57 @@
     width: 100vw;
     height: 100vh;
     background-color: #DCDCDC;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.header-component {
+    background-color: #008080;
+    height: 8rem;
+}
+
+.header-component svg {
+    cursor: pointer;
+    margin-top: 0.6rem;
+    margin-left: 0.5rem;
+}
+
+.header-component .title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-component .title h1 {
+    margin: 1rem;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+@media (max-width: 800px) {
+    .header-component {
+        background-color: #008080;
+        height: 4rem;
+    }    
+
+    .header-component .title {
+        display: grid;
+    }
+
+    .header-component .title h1 {
+        font-size: 15px;
+        color: white;
+        margin-top: -0.8rem;
+    }
 }
