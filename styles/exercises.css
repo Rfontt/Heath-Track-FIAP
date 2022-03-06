@@ -1,0 +1,50 @@
+#exercises-container {
+    background-color: #f9f9f9;
+}
+
+.exercises-title {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.exercises-title h3 {
+    font-weight: bold;
+    color: #008080;
+    margin: 1rem;
+}
+
+.videos-container {
+    margin: 1rem;
+}
+
+.videos {
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1vh;
+    padding: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.videos-container h4 {
+    color: #339999;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+@media (max-width: 900px) {
+    .videos {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .videos-container h4 {
+        text-align: center;
+    }
+
+    iframe {
+        width: 15rem;
+        height: 10rem;
+    }
+}

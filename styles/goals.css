@@ -42,14 +42,17 @@
     background-color: red;
 }
 
+#reach-green, #reach-green-one-hundred {
+    background-color: #008080;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+}
+
 .goals-content div #reach-green {
     width: 30rem;
-    background-color: #008080;
 }
 
 .goals-content div #reach-green-one-hundred {
     width: 50rem;
-    background-color: #008080;
 }
 
 .goals-content div span {
